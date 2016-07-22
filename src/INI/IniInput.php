@@ -8,11 +8,11 @@ class IniInput extends AbstractInput implements IInput
     {
         $settings = \Calculator\DI\CalculatorProvider::config();
         $mathProblem = new \stdClass();
-        if( $settings['dev']['application']['IAlgorithm'] == "Rpn" )
+        if( get_class( $this->getICalculator() ) == "Algorithm\Rpn" )
         {   
             $this->mathProblem->expression = $settings['dev']['application']['MathProblem'];
         }   
-        else if( $settings['dev']['application']['IAlgorithm'] == "Soap" )
+        else if( get_class( $this->getICalculator() ) == "Algorithm\Soap" )
         {   
             $this->mathProblem->x = $settings['dev']['application']['Soap']['addX'];
             $this->mathProblem->y = $settings['dev']['application']['Soap']['addY'];
