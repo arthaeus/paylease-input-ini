@@ -1,0 +1,1 @@
+This is where the ini input will live.  This is to provide information to the calculator via an ini file (as opposed to maybe receiving input from the web or command line)  to use the ini input, you must have the paylease-calculator's src/config/application.ini file populated with the proper values for the algorithm
