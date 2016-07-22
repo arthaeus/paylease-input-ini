@@ -4,7 +4,6 @@ namespace Input;
 
 class IniInput extends AbstractInput implements IInput
 {
-    protected $mathProblem = null;
     public function input( \stdClass $itput )
     {
         $settings = \Calculator\DI\CalculatorProvider::config();
