@@ -17,10 +17,5 @@ class AbstractInput implements IInput
         return $this->mathProblem;
     }
 
-    /*
-    public function input( \stdClass $itput )
-    {
-        $iniInput = CalculatorProvider::config();
-    }
-     */
+    abstract public function input( \stdClass $itput );
 }
