@@ -2,7 +2,7 @@
 
 namespace Input;
 
-class AbstractInput implements IInput
+class AbstractInput
 {
     protected $mathProblem = null;
 
