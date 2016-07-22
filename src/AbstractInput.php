@@ -17,5 +17,4 @@ class AbstractInput
         return $this->mathProblem;
     }
 
-    abstract public function input( \stdClass $itput );
 }
