@@ -7,7 +7,7 @@ class IniInput extends AbstractInput implements IInput
     protected $mathProblem = null;
     public function input( \stdClass $itput )
     {
-        $settings = CalculatorProvider::config();
+        $settings = \Calculator\DI\CalculatorProvider::config();
         $mathProblem = new \stdClass();
         if( $settings['dev']['application']['IAlgorithm'] == "Rpn" )
         {   
