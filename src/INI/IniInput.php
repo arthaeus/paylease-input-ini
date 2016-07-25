@@ -16,6 +16,7 @@ class IniInput extends AbstractInput implements IInput
         {   
             $this->mathProblem->x = $settings['dev']['application']['Soap']['addX'];
             $this->mathProblem->y = $settings['dev']['application']['Soap']['addY'];
+            $this->mathProblem->operation = $settings['dev']['application']['Soap']['operation'];
         }   
         return $this;
     }
