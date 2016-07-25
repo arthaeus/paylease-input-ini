@@ -12,7 +12,7 @@ class IniInput extends AbstractInput implements IInput
         {   
             $this->mathProblem->expression = $settings['dev']['application']['MathProblem'];
         }   
-        else if( get_class( $this->getICalculator()->getIAlgorithm() ) == "Algorithm\Soap" )
+        else if( get_class( $this->getICalculator()->getIAlgorithm() ) == "Algorithm\SoapMath" )
         {   
             $this->mathProblem->x = $settings['dev']['application']['Soap']['addX'];
             $this->mathProblem->y = $settings['dev']['application']['Soap']['addY'];
